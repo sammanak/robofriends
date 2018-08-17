@@ -10,9 +10,9 @@ const initialStateSearch = {
 }
 
 export const searchRobots = (state=initialStateSearch, action={}) => {
-	// console.log(action.type);
 	switch (action.type) {
 		case CHANGE_SEARCH_FIELD:
+			console.log('CHANGE_SEARCH_FIELD');
 			return Object.assign({}, state, { searchField: action.payload });
 		default:
 			return state;
@@ -20,7 +20,7 @@ export const searchRobots = (state=initialStateSearch, action={}) => {
 }
 
 const initialStateRobots = {
-	isPending: false,
+	isPending: true,
 	robots: [],
 	error: ''
 }
@@ -31,7 +31,7 @@ export const requestRobots = (state=initialStateRobots, action={}) => {
 			return Object.assign({}, state, { isPending: true })
 		case REQUEST_ROBOTS_SUCCESS:
 			return Object.assign({}, state, { robots: action.payload, isPending: false })	
-		case REQUEST_ROBOTS_FAILED: 
+		case REQUEST_ROBOTS_FAILED:
 			return Object.assign({}, state, { error: action.payload,isPending: false})
 		default:
 			return state;
