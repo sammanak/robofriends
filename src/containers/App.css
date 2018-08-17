@@ -12,3 +12,7 @@ h1 {
 	font-weight: normal;
 	color: #0ccac4;
 }
+
+.robot-card img {
+	max-width: 230px;
+}
