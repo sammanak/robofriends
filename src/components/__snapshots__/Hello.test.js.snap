@@ -8,6 +8,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -18,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <h2>
         Hellooooooooo!
-</h2>,
+      </h2>,
     },
     "ref": null,
     "rendered": Object {
@@ -42,7 +43,7 @@ ShallowWrapper {
       "props": Object {
         "children": <h2>
           Hellooooooooo!
-</h2>,
+        </h2>,
       },
       "ref": null,
       "rendered": Object {
@@ -67,12 +68,14 @@ ShallowWrapper {
           "componentDidUpdate": Object {
             "onSetState": true,
           },
+          "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

@@ -8,6 +8,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -20,11 +21,11 @@ ShallowWrapper {
         <img
           alt="robots"
           src="https://robohash.org/undefined?size=200x200"
-/>,
+        />,
         <div>
           <h3 />
           <p />
-</div>,
+        </div>,
       ],
       "className": "tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5",
     },
@@ -92,11 +93,11 @@ ShallowWrapper {
           <img
             alt="robots"
             src="https://robohash.org/undefined?size=200x200"
-/>,
+          />,
           <div>
             <h3 />
             <p />
-</div>,
+          </div>,
         ],
         "className": "tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5",
       },
@@ -163,12 +164,14 @@ ShallowWrapper {
           "componentDidUpdate": Object {
             "onSetState": true,
           },
+          "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

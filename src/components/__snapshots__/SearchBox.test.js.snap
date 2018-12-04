@@ -8,6 +8,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -19,10 +20,9 @@ ShallowWrapper {
       "children": <input
         aria-label="Search Robots"
         className="pa3 ba b--light-blue bg-lightest-blue"
-        onChange={undefined}
-        placeholder="search rotobs"
+        placeholder="search robots"
         type="search"
-/>,
+      />,
       "className": "pa2",
     },
     "ref": null,
@@ -34,7 +34,7 @@ ShallowWrapper {
         "aria-label": "Search Robots",
         "className": "pa3 ba b--light-blue bg-lightest-blue",
         "onChange": undefined,
-        "placeholder": "search rotobs",
+        "placeholder": "search robots",
         "type": "search",
       },
       "ref": null,
@@ -52,10 +52,9 @@ ShallowWrapper {
         "children": <input
           aria-label="Search Robots"
           className="pa3 ba b--light-blue bg-lightest-blue"
-          onChange={undefined}
-          placeholder="search rotobs"
+          placeholder="search robots"
           type="search"
-/>,
+        />,
         "className": "pa2",
       },
       "ref": null,
@@ -67,7 +66,7 @@ ShallowWrapper {
           "aria-label": "Search Robots",
           "className": "pa3 ba b--light-blue bg-lightest-blue",
           "onChange": undefined,
-          "placeholder": "search rotobs",
+          "placeholder": "search robots",
           "type": "search",
         },
         "ref": null,
@@ -85,12 +84,14 @@ ShallowWrapper {
           "componentDidUpdate": Object {
             "onSetState": true,
           },
+          "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;
